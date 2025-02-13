@@ -1,85 +1,135 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Основные стили */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 600px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
-    padding: 10px;
-    background-color: #4CAF50;
+    font-family: 'Arial', sans-serif;
     color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    margin: 0;
+    display: flex;
+    background-image: url(https://get.wallhere.com/photo/3840x2400-px-gradient-green-1422269.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-button:hover {
-    background-color: #45a049;
+
+
+/* Аватар */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid white;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Заголовок */
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* Ссылки */
+.whatsapp-button {
+    bottom: 0px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 0px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
     margin-top: 20px;
+    margin: auto;
+    width: 100%;
 }
 
-table th, table td {
-    padding: 10px;
-    border: 1px solid #ddd;
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+.profile{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.div-2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.div-3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.div-2 p{
+    margin: 5px 0px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 95%;
+}
+.div-3 p{
+    margin: 5px 0px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 95%;
+}
+
+.profile p{
+    width: 90%;
+    margin: auto;
     text-align: left;
 }
 
-table th {
-    background-color: #f2f2f2;
+.profile h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.profile h1 span{
+    color: rgb(35, 125, 27);
+}
+.delivery-div{
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+.delivery-div img{
+    width: 80px;
+    height: 80px;
+    left: 0px;
+    top: -10px;
+    transform: rotate(30deg);
+    position: absolute;
+    z-index: -1;
+}
+.delivery-div h3{
+    text-shadow: 0px 0px 3px #05162c;
+}
+.images img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.container {
+    backdrop-filter: blur(10px);
+    padding: 20px;
 }
 
-table td button {
-    padding: 5px 10px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-table td button:hover {
-    background-color: #e53935;
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 400px) {
+    .container {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .links .link {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
